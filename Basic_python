@@ -1,0 +1,78 @@
+//array
+import numpy as np
+arr=np.array([1,2,3,4,5,6,7,8,9,10])
+print(arr)
+
+//matrix
+arr1=np.array([[1,2,3,4,5],[6,7,8,9,10]])
+print(arr1)
+
+//properties
+print(arr.ndim)
+print(arr.shape)
+print(arr.size)
+print(arr.dtype)
+print(arr1.shape)
+print(arr1.ndim)
+print(arr1.size)
+print(arr1.dtype)
+print(np.min(arr))
+print(np.max(arr))
+print(np.sum(arr))
+print(np.mean(arr))
+print(np.std(arr))
+print(np.var(arr))
+print(np.min(arr1))
+print(np.max(arr1))
+print(np.sum(arr1))
+print(np.mean(arr1))
+print(np.std(arr1))
+print(np.var(arr1))
+
+
+//slicing
+print(arr[2:4])
+print(arr[:4])
+
+//stepcount
+print(arr[0:10:2])
+
+//reverse
+print(arr[::-1])
+
+//matplotlib
+import matplotlib.pyplot as plt
+x=[1,2,3,4,5]
+y=[100,200,300,400,500]
+plt.plot(x,y)
+plt.show()
+
+//bar plot
+import matplotlib.pyplot as plt
+x=[1,2,3,4,5]
+y=[100,200,300,400,500]
+plt.bar(x,y)
+plt.show()
+
+//scatter plot
+import matplotlib.pyplot as plt
+x=[1,2,3,4,5]
+y=[100,200,300,400,500]
+plt.scatter(x,y)
+plt.show()
+
+//histogram
+data=[10,20,30,40,50,68.87,89,99]
+plt.hist(data)
+plt.show()
+
+data=[10,10,10,30,40,40,50,50,50]
+plt.hist(data)
+plt.show()
+
+plt.plot(x,y,color='blue',marker='d',linestyle='--')
+plt.grid(True)
+plt.title("Line Graph")
+plt.xlabel("X-Axis")
+plt.ylabel("Y-Axis")
+plt.show()
